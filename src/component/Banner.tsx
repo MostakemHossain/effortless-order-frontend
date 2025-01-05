@@ -14,7 +14,7 @@ const Banner = () => {
             Effortless Order Foods
           </h1>
 
-          <p className="text-gray-600 text-lg">
+          <p className="text-[#666666] text-lg">
             ELO is decentralized reward system, the overall system including
             reward will be extended and we will launch extra services to make
             our token more valuable. People who own $ELO can get more and more
