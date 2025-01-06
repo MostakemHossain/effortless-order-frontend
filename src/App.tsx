@@ -1,5 +1,6 @@
 import Banner from "./component/Banner";
 import CallToAction from "./component/CallToAction";
+import Features from "./component/Features";
 import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import Roadmap from "./component/Roadmap";
@@ -11,6 +12,7 @@ const App = () => {
     <div>
       <Navbar />
       <Banner />
+      <Features />
       <Step />
       <Tokenomics />
       <Roadmap />
