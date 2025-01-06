@@ -37,7 +37,6 @@ const Tokenomics = () => {
               >
                 <div className="text-gray-600 text-xl">{item.label}</div>
 
-              
                 <div className="flex items-center justify-center gap-5 lg:flex-row lg:items-center lg:w-[80%]">
                   <span className="text-gray-600 text-sm lg:text-base">
                     {item.percentage}%
