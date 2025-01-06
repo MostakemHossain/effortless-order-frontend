@@ -1,4 +1,5 @@
 import Banner from "./component/Banner";
+import Brand from "./component/Brand";
 import CallToAction from "./component/CallToAction";
 import Features from "./component/Features";
 import Footer from "./component/Footer";
@@ -12,6 +13,7 @@ const App = () => {
     <div>
       <Navbar />
       <Banner />
+      <Brand />
       <Features />
       <Step />
       <Tokenomics />
