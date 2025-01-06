@@ -3,12 +3,14 @@ import { BiWallet } from "react-icons/bi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../assets/logo-elo.png";
+import { ContractsModal } from "./ContractsModal";
 import { WalletModal } from "./NavbarModal";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isWalletModalOpen, setWalletModalOpen] = useState(false);
+  const [isContractsModalOpen, setContractsModalOpen] = useState(false);
 
   const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
 
@@ -103,7 +105,12 @@ export default function Navbar() {
                         ELO whitepaper
                       </a>
                       <a
-                        href="/contracts"
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setContractsModalOpen(true);
+                          setDropdownOpen(false);
+                        }}
                         className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                       >
                         Contracts
@@ -173,6 +180,10 @@ export default function Navbar() {
       <WalletModal
         isOpen={isWalletModalOpen}
         onClose={() => setWalletModalOpen(false)}
+      />
+      <ContractsModal
+        isOpen={isContractsModalOpen}
+        onClose={() => setContractsModalOpen(false)}
       />
     </>
   );
